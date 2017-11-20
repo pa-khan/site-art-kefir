@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="upload/favicon.png" type="image/png">
 	<link rel="stylesheet" href="template/styles/css/style.css" />
 	<link rel="stylesheet" href="template/styles/css/responsive.css" />
-	<script src="template/scripts/libs.min.js"></script>
+	<script src="template/scripts/libs.js"></script>
 	<script src="template/scripts/common.js"></script>
 	<!--[if lt IE 9]>
 	<script>
@@ -23,9 +23,24 @@
 </head>
 <body>
 	<div class="popup popup_thanks" id="popup-thanks">
-		<div class="popup__close"><i class="icon icon-close"></i></div>
-		<div class="popup__title">Спасибо за заявку!</div>
+		<div class="popup__close" data-fancybox-close><i class="icon icon-close"></i></div>
+		<div class="popup__title title">Спасибо за заявку!</div>
 		<div class="popup__text">В ближайшее время наш менеджер свяжется с Вами!</div>
+	</div>
+	<div class="popup popup_order" id="popup-order">
+		<div class="popup__close" data-fancybox-close><i class="icon icon-close"></i></div>
+		<div class="popup__title title">Оставить заявку</div>
+		<input type="text" class="popup__input input" placeholder="Имя">
+		<input type="text" class="popup__input input" placeholder="E-mail">
+		<button class="popup__button button button_white">Отправить</button>
+	</div>
+	<div class="popup popup_review" id="popup-review">
+		<div class="popup__close" data-fancybox-close><i class="icon icon-close"></i></div>
+		<div class="popup__title title">Оставить отзыв</div>
+		<input type="text" class="popup__input input" placeholder="Имя">
+		<input type="text" class="popup__input input" placeholder="E-mail">
+		<textarea class="popup__textarea textarea" placeholder="Ваш отзыв"></textarea>
+		<button class="popup__button button button_white">Отправить</button>
 	</div>
 	<header class="header">
 		<div class="panel">
@@ -86,26 +101,55 @@
 		<div class="nav-fixed">
 			<div class="container">
 				<ul>
-					<li><a href="">квесты</a></li>
-					<li><a href="">шоу</a></li>
+					<li>
+						<a href="">квесты</a>
+						<ul>
+							<li><a href="">форт боярд</a></li>
+							<li><a href="">Гарри Поттер</a></li>
+							<li><a href="">лаборатория X</a></li>
+							<li><a href="">angry birds</a></li>
+							<li><a href="">рататуй</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">шоу</a>
+						<ul>
+							<li><a href="">Бумага PARTY</a></li>
+							<li><a href="">Космический лед</a></li>
+							<li><a href="">-196</a></li>
+							<li><a href="">MIX шоу</a></li>
+							<li><a href="">КРИО - мороженое</a></li>
+							<li><a href="">Электро ШОУ</a></li>
+							<li><a href="">Юные химики</a></li>
+						</ul>
+					</li>
 					<li><a href="">анимация</a></li>
-					<li><a href="">подростковые программы</a></li>
+					<li>
+							<a href="">подростковые программы</a>
+							<ul>
+								<li><a href="">Добрый вечер, Москва</a></li>
+								<li><a href="">молодежный ведущий</a></li>
+								<li><a href="">Дискотека</a></li>
+								<li><a href="">мафия</a></li>
+								<li><a href="">элиас</a></li>
+							</ul>
+					</li>
 					<li><a href="">воздушные шары</a></li>
 					<li><a href="">новый год 2018</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="banner">
-			<div class="banner__img"><img src="upload/banner.png" alt=""></div>
-			<div class="banner__wrap">
-				<div class="container">
-					<div class="banner__title">Организация праздников, квестов, шоу для детей</div>
-					<div class="banner__desc">Бесплатные подарки детям на Новый Год 2018</div>
-					<a href="" class="banner__button button button_blue">Заказать</a>
-				</div>
+	</header>
+	<div class="banner">
+		<div class="banner__img"><img src="upload/banner.png" alt=""></div>
+		<div class="banner__wrap">
+			<div class="container">
+				<div class="banner__title">Организация праздников, квестов, шоу для детей</div>
+				<div class="banner__desc">Бесплатные подарки детям на Новый Год 2018</div>
+				<a data-fancybox data-src="#popup-order" href="javascript:;" class="banner__button button button_blue">Заказать</a>
 			</div>
 		</div>
-	</header>
+	</div>
 	<main class="main">
 		<div class="ny2018">
 			<div class="container row">
@@ -125,7 +169,7 @@
 			<div class="container row">
 				<div class="main-page__block col">
 					<div class="about">
-						<div class="about__title">О нас</div>
+						<div class="about__title title">О нас</div>
 						<div class="about__list row_line">
 							<div class="about__item col_line">
 								<div class="about__icon"><i class="icon icon-thumbs-up"></i></div>
@@ -156,10 +200,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="about__name">АРТ-КЕФИР</div>
+						<div class="about__name"></div>
 					</div>
 					<div class="scheme">
-						<div class="scheme__title">Схема работы</div>
+						<div class="scheme__title title">Схема работы</div>
 						<div class="scheme__list row_line">
 							<div class="scheme__item col_line">
 								<div class="scheme__icon"><i class="icon icon-call"></i></div>
@@ -180,7 +224,7 @@
 						</div>
 					</div>
 					<div class="clients">
-						<div class="clients__title">Наши клиенты</div>
+						<div class="clients__title title title">Наши клиенты</div>
 						<div class="clients__list">
 							<div class="clients__item"><img src="upload/clients/1.png" alt=""></div>
 							<div class="clients__item"><img src="upload/clients/2.png" alt=""></div>
@@ -202,7 +246,7 @@
 		</div>
 		<div class="reviews">
 			<div class="container">
-				<div class="reviews__title">Отзывы</div>
+				<div class="reviews__title title">Отзывы</div>
 				<div class="reviews__list">
 					<div class="reviews__item row">
 						<div class="reviews__face col"><img src="" alt=""></div>
@@ -211,8 +255,15 @@
 							<div class="reviews__persona">Имя Фамилия</div>
 						</div>
 					</div>
+					<div class="reviews__item row">
+						<div class="reviews__face col"><img src="" alt=""></div>
+						<div class="reviews__content col">
+							<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vodol</div>
+							<div class="reviews__persona">Имя Фамилия</div>
+						</div>
+					</div>
 				</div>
-				<a href="" class="reviews__button button button_blue">Оставить отзыв</a>
+				<a data-fancybox data-src="#popup-review" href="javascript:;" class="reviews__button button button_blue">Оставить отзыв</a>
 			</div>
 		</div>
 	</main>
@@ -227,7 +278,7 @@
 					</ul>
 				</div>
 				<div class="questions__form form col">
-					<div class="form__title">Остались вопросы?</div>
+					<div class="form__title title">Остались вопросы?</div>
 					<div class="form__elements">
 						<input type="text" class="form__input input" placeholder="Ваше имя">
 						<input type="text" class="form__input input" placeholder="E-mail">
@@ -238,19 +289,21 @@
 			</div>
 		</div>
 		<div class="f-contacts">
-			<div class="container row">
-				<div class="f-contacts__item col"><i class="icon icon-mail"></i><a href="">Art-kefir@mail.ru</a></div>
-				<div class="f-contacts__item col"><i class="icon icon-phone"></i><a href="">+7(499)450-81-01</a></div>
+			<div class="container row_line">
+				<div class="f-contacts__item col_line"><i class="icon icon-mail"></i><a href="">Art-kefir@mail.ru</a></div>
+				<div class="f-contacts__item col_line"><i class="icon icon-phone"></i><a href="">+7(499)450-81-01</a></div>
 			</div>
 		</div>
 		<div class="callback">
-			<div class="callback__arrow"><i class="icon icon-arrow-up"></i></div>
-			<div class="callback__wrap">
-				<input type="text" class="callback__input input" placeholder="Ваше имя">
-				<input type="text" class="callback__input input input_phone" placeholder="Телефон">
-				<button class="callback__button button button_blue">Заказать звонок</button>
+			<div class="container">
+				<div class="callback__arrow"><i class="icon icon-arrow-up"></i></div>
+				<div class="callback__wrap">
+					<input type="text" class="callback__input input input_blue" placeholder="Ваше имя">
+					<input type="text" class="callback__input input input_blue input_phone" placeholder="Телефон">
+					<button class="callback__button button button_blue">Заказать звонок</button>
+				</div>
+				<div class="callback__link"><span>Заказать звонок</span></div>
 			</div>
-			<div class="callback__link">Заказать звонок</div>
 		</div>
 	</footer>
 </body>

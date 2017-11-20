@@ -52,7 +52,7 @@
   width: 26px;
   height: 26px; }
 
-.icon-delivery-truck- {
+.icon-delivery-truck {
   background-image: url(../../img/sprite.png);
   background-position: 0px 0px;
   width: 71px;
@@ -142,23 +142,23 @@
   width: 51px;
   height: 31px; }
 
-.icon-vk-black {
+.icon-vk-big-orange {
   background-image: url(../../img/sprite.png);
-  background-position: -238px -185px;
-  width: 26px;
-  height: 16px; }
+  background-position: 0px -229px;
+  width: 51px;
+  height: 31px; }
 
-.icon-vk-blue {
+.icon-vk-black {
   background-image: url(../../img/sprite.png);
   background-position: -238px -169px;
   width: 26px;
   height: 16px; }
 
-.icon-vk-orange {
+.icon-vk-blue {
   background-image: url(../../img/sprite.png);
-  background-position: 0px -229px;
-  width: 51px;
-  height: 31px; }
+  background-position: -238px -185px;
+  width: 26px;
+  height: 16px; }
 
 .icon-youtube-big-blue {
   background-image: url(../../img/sprite.png);

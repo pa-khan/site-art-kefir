@@ -39,4 +39,55 @@ $(document).ready(function($) {
 			navFixed.removeClass('nav-fixed_show');
 		}
 	});
+
+
+	$('.upload input').change(function(event) {
+		var value = $(this).val(),
+				label = $(this).siblings('label');
+		if (value != '') {
+			label.html('Фотография успешно загружена.');
+		}
+	});
+
+	$( "#tabs" ).tabs();
+
+	$('.product__img').slick({
+		// asNavFor: '.product__imgs',
+		arrows: false
+	});
+	
+	$('.product__imgs').slick({
+		slidesToShow: 4,
+		// asNavFor: '.product__img',
+		// focusOnSelect: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 620,
+				settings: {
+					slidesToShow: 3
+				}}, {
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	});
+
+	$('#tabs a').click(function(event) {
+		$('.product__img').slick('reinit');
+		$('.product__imgs').slick('reinit');
+	});
+
+	$('.hum').click(function(event) {
+		$(this).toggleClass('hum_toggle');
+		$('.panel__nav').slideToggle(300);
+	});
+
+	$('.product__imgs').each(function(index, el) {
+		var a = $(this).find('a');
+
+		a.attr('data-fancybox', 'project-' + index);
+	});
 });

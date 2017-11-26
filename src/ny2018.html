@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" href="upload/favicon.png" type="image/png">
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="popup popup_thanks" id="popup-thanks">
+		<div class="popup__close"><i class="icon icon-close"></i></div>
+		<div class="popup__title">Спасибо за заявку!</div>
+		<div class="popup__text">В ближайшее время наш менеджер свяжется с Вами!</div>
+	</div>
+	<header class="header">
+		<div class="panel">
+			<div class="container row">
+				<div class="panel__logo col"><a href="index.html"><img src="upload/logo.png" alt=""></a></div>
+				<div class="panel__nav col">
+					<ul>
+						<li>
+							<a href="">квесты</a>
+							<ul>
+								<li><a href="">форт боярд</a></li>
+								<li><a href="">Гарри Поттер</a></li>
+								<li><a href="">лаборатория X</a></li>
+								<li><a href="">angry birds</a></li>
+								<li><a href="">рататуй</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">шоу</a>
+							<ul>
+								<li><a href="">Бумага PARTY</a></li>
+								<li><a href="">Космический лед</a></li>
+								<li><a href="">-196</a></li>
+								<li><a href="">MIX шоу</a></li>
+								<li><a href="">КРИО - мороженое</a></li>
+								<li><a href="">Электро ШОУ</a></li>
+								<li><a href="">Юные химики</a></li>
+							</ul>
+						</li>
+						<li><a href="">анимация</a></li>
+						<li>
+								<a href="">подростковые программы</a>
+								<ul>
+									<li><a href="">Добрый вечер, Москва</a></li>
+									<li><a href="">молодежный ведущий</a></li>
+									<li><a href="">Дискотека</a></li>
+									<li><a href="">мафия</a></li>
+									<li><a href="">элиас</a></li>
+								</ul>
+						</li>
+						<li><a href="">воздушные шары</a></li>
+						<li><a href="">новый год 2018</a></li>
+					</ul>
+				</div>
+				<div class="panel__hum hum col">
+					<div class="hum__lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="hum__text">меню</div>
+				</div>
+				<div class="panel__contacts col">
+					<div class="panel__phone"><a href="">+7(499)450-81-01</a></div>
+					<div class="panel__email"><a href="">Art-kefir@mail.ru</a></div>
+					<div class="panel__socials">
+						<ul>
+							<li><a href="" target="_blank"><i class="icon icon-insta-black"></i></a></li>
+							<li><a href="" target="_blank"><i class="icon icon-youtube-black"></i></a></li>
+							<li><a href="" target="_blank"><i class="icon icon-vk-black"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-fixed">
+			<div class="container">
+				<ul>
+					<li>
+						<a href="">квесты</a>
+						<ul>
+							<li><a href="">форт боярд</a></li>
+							<li><a href="">Гарри Поттер</a></li>
+							<li><a href="">лаборатория X</a></li>
+							<li><a href="">angry birds</a></li>
+							<li><a href="">рататуй</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">шоу</a>
+						<ul>
+							<li><a href="">Бумага PARTY</a></li>
+							<li><a href="">Космический лед</a></li>
+							<li><a href="">-196</a></li>
+							<li><a href="">MIX шоу</a></li>
+							<li><a href="">КРИО - мороженое</a></li>
+							<li><a href="">Электро ШОУ</a></li>
+							<li><a href="">Юные химики</a></li>
+						</ul>
+					</li>
+					<li><a href="">анимация</a></li>
+					<li>
+							<a href="">подростковые программы</a>
+							<ul>
+								<li><a href="">Добрый вечер, Москва</a></li>
+								<li><a href="">молодежный ведущий</a></li>
+								<li><a href="">Дискотека</a></li>
+								<li><a href="">мафия</a></li>
+								<li><a href="">элиас</a></li>
+							</ul>
+					</li>
+					<li><a href="">воздушные шары</a></li>
+					<li><a href="">новый год 2018</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="page">
+			<div class="container">
+				<div class="page__head row">
+					<div class="breadcrumbs col">
+						<ul>
+							<li><a href="">Главная</a></li>
+							<li>Новый год 2018</li>
+						</ul>
+					</div>
+					<div class="link col"><a href="">Скачать каталог</a></div>
+				</div>
+				<div class="page__body">
+					<div id="tabs" class="ny">
+						<ul class="ny__nav">
+							<li><a href="#tabs-1">Интерактивная сказка</a></li>
+							<li><a href="#tabs-2">Дед Мороз и Снегурочка на дом</a></li>
+						</ul>
+						<div id="tabs-1">
+							<div class="ny__banner">
+								<div class="ny__img"><img src="upload/ny/1.png" alt=""></div>
+								<div class="ny__wrap">
+									<div class="ny__title">«Тайна Первой Снежинки»</div>
+									<div class="ny__desc">Интерактивная сказка от мастерской полезного праздника Арт-Кефир</div>
+									<a data-fancybox data-src="#popup-order" class="ny__button button button_blue">Заказать</a>
+								</div>
+							</div>
+							<div class="fairy-tale">
+								<div class="fairy-tale__product product">
+									<div class="product__title title">Интерактивный спектакль «Тайна Первой Снежинки»</div>
+									<div class="product__row row">
+										<div class="product__content col">
+											<div class="product__data">
+												<div class="product__data-item"><b><i class="icon icon-clock"></i></b><span>60 минут</span></div>
+												<div class="product__data-item"><b><i class="icon icon-smiley"></i></b><span>2-8 лет</span></div>
+											</div>
+											<div class="product__text">
+												<p>“Однажды снежинка Кристаллина решила оторваться от листка и полететь путешествовать по Вселенной..” – так начинается увлекательнейшая история одной аленькой снежинки, которая безумно хотела узнавать все новое. Когда она подросла, то твердо решила, что пора осуществить свою мечту и полетела на поиски неизведанного. На ее пути встречались бури, огромные Снежинки, и даже злой обжора Снегожуйка, которого Кристаллина научила дружить. Путешествовать и играть с юными гостями ей помогли веселые, заводные Снеговаляшки. Какие же тайны узнала Кристаллина? Какие испытания преодолела? Интересно? Тогда скорее оправляйтесь следом за нашей героиней – обещаем, что скучно не будет!</p>
+											</div>
+											<a href="" class="product__button button button_blue">Заказать</a>
+										</div>
+										<div class="product__sliders col">
+											<div class="product__img">
+												<div><img src="upload/fairy-tale/about/1.png" alt=""></div>
+											</div>
+											<div class="product__imgs">
+												<div><a href="upload/fairy-tale/about/2.png"><img src="upload/fairy-tale/about/2.png" alt=""></a></div>
+												<div><a href="upload/fairy-tale/about/2.png"><img src="upload/fairy-tale/about/2.png" alt=""></a></div>
+												<div><a href="upload/fairy-tale/about/2.png"><img src="upload/fairy-tale/about/2.png" alt=""></a></div>
+												<div><a href="upload/fairy-tale/about/2.png"><img src="upload/fairy-tale/about/2.png" alt=""></a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fairy-tale__advantages advantages">
+									<div class="advantages__wrap">
+										<div class="advantages__title title">Ценности спектакля</div>
+										<div class="advantages__list row_line">
+											<div class="advantages__item col_line">
+												<div class="advantages__subtitle">Уникальный</div>
+												<div class="advantages__text">Сценарий нашего спектакля авторский, а значит, каждая его деталь имеет значение и продумана до мелочей.</div>
+											</div>
+											<div class="advantages__item col_line">
+												<div class="advantages__subtitle">По истине волшебный</div>
+												<div class="advantages__text">Благодаря большому и качественному реквизиту, ярким костюмам, световым эффектам и новогодней музыке, зрители смогут полностью погрузиться в настоящую атмосферу волшебства и новогоднего настроения.</div>
+											</div>
+											<div class="advantages__item col_line">
+												<div class="advantages__subtitle">Интерактивный</div>
+												<div class="advantages__text">Все зрители, независимо от того сколько их, 5 или 95, принимают активное участие, сопереживая и помогая персонажам.</div>
+											</div>
+											<div class="advantages__item col_line">
+												<div class="advantages__subtitle">Поучительный</div>
+												<div class="advantages__text">Новогодний спектакль не только подарит детям искренние эмоции, но и покажет, как же здорово дружить, путешествовать и узнавать все новое, неизведанное. Научит не бояться трудностей, а смело их преодолевать. И, конечно же покажут, что как бы н было хорошо в гостях, но дома все равно лучше, ведь там тебя любят и ждут.</div>
+											</div>
+											<div class="advantages__item col_line">
+												<div class="advantages__subtitle">Профессиональный</div>
+												<div class="advantages__text">На протяжении всего часа наши профессиональные актеры будут сопровождать маленьких зрителей в сказочный мир детства. Зная, как важно для ребенка верить в новогоднее чудо, мы сделаем все для тог, чтобы он как можно дольше оставался в этой волшебной атмосфере.</div>
+											</div>
+										</div>
+										<div class="advantages__img">
+											<img src="upload/fairy-tale/advantages/1.png" alt="">
+											<img src="upload/fairy-tale/advantages/2.png" alt="">
+											<img src="upload/fairy-tale/advantages/3.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="fairy-tale__dops">
+									<div class="fairy-tale__dops-title title">Прекрасно дополнит Ваш праздник</div>
+									<div class="fairy-tale__dops-list">
+										<div class="fairy-tale__dop row">
+											<div class="fairy-tale__dop-content col">
+												<div class="fairy-tale__dop-title">Поздравление от Деда Мороза</div>
+												<div class="fairy-tale__dop-data">
+													<div class="fairy-tale__dop-data-item"><b><i class="icon icon-clock"></i></b><span>30 минут</span></div>
+													<div class="fairy-tale__dop-data-item"><b><i class="icon icon-money"></i></b><span>4 000 рублей</span></div>
+												</div>
+												<div class="fairy-tale__dop-text">Знаете ли вы, что ждёт каждый ребенок на Новый Год? Точнее кого? Конечно же Деда Мороза! Ведь он способен осуществить новогоднюю мечту и показать настоящие чудеса. На протяжении получаса все дети будут играть с самым главным зимним волшебником, водить хороводы вокруг нарядной елочки, загадают желание и даже получат подарок, рассказав стихотворение.</div>
+											</div>
+											<div class="fairy-tale__dop-imgs col">
+												<img src="upload/fairy-tale/dops/1/1.png" alt="">
+												<img src="upload/fairy-tale/dops/1/2.png" alt="">
+												<img src="upload/fairy-tale/dops/1/3.png" alt="">
+											</div>
+										</div>
+										<div class="fairy-tale__dop row">
+											<div class="fairy-tale__dop-content col">
+												<div class="fairy-tale__dop-title">Поздравление от Деда Мороза и Снегурочки</div>
+												<div class="fairy-tale__dop-data">
+													<div class="fairy-tale__dop-data-item"><b><i class="icon icon-clock"></i></b><span>30 минут</span></div>
+													<div class="fairy-tale__dop-data-item"><b><i class="icon icon-money"></i></b><span>6 000 рублей</span></div>
+												</div>
+												<div class="fairy-tale__dop-text">Казалось бы, кто моет быть лучше Дедушки Мороза на Новый Год? Правильно – Дед Мороз со Снегурочкой. Уж Снегурочка точно знает толк в детских играх: поиграет в рукавичку, Снеговика слепит и снежки наколдует. Она и Дедушка поможет, а детей без подарков не оставит! Костюмы наших волшебных гостей никого не оставят равнодушными – будто серебром вышита каждая ниточка на платье Снегурочки, а борода у Деда Мороза точно настоящая!</div>
+											</div>
+											<div class="fairy-tale__dop-imgs col">
+												<img src="upload/fairy-tale/dops/2/1.png" alt="">
+												<img src="upload/fairy-tale/dops/2/2.png" alt="">
+												<img src="upload/fairy-tale/dops/2/3.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tabs-2">
+							<div class="ny__banner ny__banner_mod">
+								<div class="ny__img"><img src="upload/ny/2.png" alt=""></div>
+								<div class="ny__wrap">
+									<div class="ny__title">Дед Мороз и Снегурочка на дом</div>
+									<a data-fancybox data-src="#popup-order" class="ny__button button button_blue">Заказать</a>
+								</div>
+							</div>
+							<div class="product product_zero">
+								<div class="product__title title">Классическое поздравление</div>
+								<div class="product__row row">
+									<div class="product__content col">
+										<div class="product__data product__data_xs">
+											<div class="product__data-item"><b><i class="icon icon-clock"></i></b><span>30 минут</span></div>
+											<div class="product__data-item"><b><i class="icon icon-human"></i></b><span><u>1 актер</u> Дед мороз</span></div>
+											<div class="product__data-item"><b><i class="icon icon-people-blue"></i></b><span><u>2 актера</u> Дед мороз и Снегурочка</span></div>
+										</div>
+										<div class="product__text">
+											<p>Любимый сказочный Дедушка придет к Вам в гости! Научит волшебным заклинаниям, разрешит поколдовать своим посохом и конечно поиграет со всей семьей. Вы же себя вели хорошо весь год?!</p>
+											<p>Но настоящее новогоднее чудо произойдет, после того, как Дед Мороз, услышит любимые стихотворения и песни, ведь наступит время долгожданных подарков! А если еще и внучка Снегурочка приедет, на помощь дедушки, он все-таки уже не молод, то точно веселью не будет предела!</p>
+										</div>
+										<div class="product__list">
+											<ul>
+												<li>Погружение в новогоднюю атмосферу</li>
+												<li>Музыкальное сопровождение</li>
+												<li>Игры и танцы</li>
+												<li>Хоровод</li>
+												<li>Вручение подарков</li>
+											</ul>
+										</div>
+										<div class="product__table">
+											<table>
+												<thead>
+													<tr>
+														<th></th>
+														<th>Дед Мороз</th>
+														<th>Дед Мороз и Снегурочка</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>до 20 декабря</td>
+														<td>4 000 р.</td>
+														<td>6 000 р.</td>
+													</tr>
+													<tr>
+														<td>21 - 23 декабря</td>
+														<td>4 500 р.</td>
+														<td>6 500 р.</td>
+													</tr>
+													<tr>
+														<td>24-26 декабря</td>
+														<td>5 000 р.</td>
+														<td>7 000 р.</td>
+													</tr>
+													<tr>
+														<td>27-29 декабря</td>
+														<td>6 000 р.</td>
+														<td>8 000 р.</td>
+													</tr>
+													<tr>
+														<td>30 декабря</td>
+														<td>7 000 р.</td>
+														<td>9 000 р.</td>
+													</tr>
+													<tr>
+														<td>31 декабря до 16:00</td>
+														<td>8 000 р.</td>
+														<td>11 000 р.</td>
+													</tr>
+													<tr>
+														<td>16:00 - 21:00</td>
+														<td>10 000 р.</td>
+														<td>13 000 р.</td>
+													</tr>
+													<tr>
+														<td>21:00 - 01:00</td>
+														<td>12 000 р.</td>
+														<td>15 000 р.</td>
+													</tr>
+													<tr>
+														<td>01:00 - 05:00</td>
+														<td>10 000 р.</td>
+														<td>13 000 р.</td>
+													</tr>
+													<tr>
+														<td>1 января</td>
+														<td>8 000 р.</td>
+														<td>11 000 р.</td>
+													</tr>
+													<tr>
+														<td>2 - 7 января</td>
+														<td>5 000 р.</td>
+														<td>7 000 р.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="product__images col"><img src="upload/house/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="product product_zero">
+								<div class="product__title title">Интерактивная программа «Подушка Деда Мороза»</div>
+								<div class="product__row row">
+									<div class="product__content col">
+										<div class="product__data product__data_xs">
+											<div class="product__data-item"><b><i class="icon icon-clock"></i></b><span>40 минут</span></div>
+											<div class="product__data-item"><b><i class="icon icon-people-blue"></i></b><span><u>2 актера</u> Дед мороз и Снегурочка</span></div>
+										</div>
+										<div class="product__text">
+											<p>Снегурочка спешит к Вам в гости, так-как метель, так заметала в этом году, что любимую подушку Деда Мороза куда-то затеряла. А Дедушка без нее никак, ведь на его волшебной подушки снятся самые сказочные сны и придумываются самые волшебные чудеса! Вот и бегает Снегурочка, ищет, куда же подушка затерялась! А вот и она! Прямо в комнате Вашего ребенка. Интересно, какие же тайны она хранит? Узнаем все тайны волшебства и конечно вернем подушку ее морозному владельцу все вместе!</p>
+										</div>
+										<div class="product__list">
+											<ul>
+												<li>Театрализованная программа</li>
+												<li>Авторский реквизит</li>
+												<li>Музыкальное сопровождение</li>
+												<li>Погружение в новогоднюю атмосферу</li>
+												<li>Игры и танцы</li>
+												<li>Хоровод</li>
+												<li>Вручение подарков</li>
+											</ul>
+										</div>
+										<div class="product__table">
+											<table>
+												<tbody>
+													<tr>
+														<td>до 20 декабря</td>
+														<td>6 500 р.</td>
+													</tr>
+													<tr>
+														<td>21 - 23 декабря</td>
+														<td>7 000 р.</td>
+													</tr>
+													<tr>
+														<td>24-26 декабря</td>
+														<td>7 500 р.</td>
+													</tr>
+													<tr>
+														<td>27-29 декабря</td>
+														<td>8 500 р.</td>
+													</tr>
+													<tr>
+														<td>30 декабря</td>
+														<td>9 500 р.</td>
+													</tr>
+													<tr>
+														<td>31 декабря до 16:00</td>
+														<td>12 500 р.</td>
+													</tr>
+													<tr>
+														<td>16:00 - 21:00</td>
+														<td>14 500 р.</td>
+													</tr>
+													<tr>
+														<td>21:00 - 01:00</td>
+														<td>16 500 р.</td>
+													</tr>
+													<tr>
+														<td>01:00 - 05:00</td>
+														<td>14 500 р.</td>
+													</tr>
+													<tr>
+														<td>1 января</td>
+														<td>12 500 р.</td>
+													</tr>
+													<tr>
+														<td>2 - 7 января</td>
+														<td>7 500 р.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="product__images col"><img src="upload/house/2.png" alt=""></div>
+								</div>
+							</div>
+							<div class="product product_hit product_zero">
+								<div class="product__title title">Интерактивная программа «Подушка Деда Мороза»</div>
+								<div class="product__row row">
+									<div class="product__content col">
+										<div class="product__data product__data_xs">
+											<div class="product__data-item"><b><i class="icon icon-clock"></i></b><span>40 минут</span></div>
+											<div class="product__data-item"><b><i class="icon icon-people-blue"></i></b><span><u>2 актера</u> Дед мороз и Снегурочка</span></div>
+										</div>
+										<div class="product__text">
+											<p>Снегурочка спешит к Вам в гости, так-как метель, так заметала в этом году, что любимую подушку Деда Мороза куда-то затеряла. А Дедушка без нее никак, ведь на его волшебной подушки снятся самые сказочные сны и придумываются самые волшебные чудеса! Вот и бегает Снегурочка, ищет, куда же подушка затерялась! А вот и она! Прямо в комнате Вашего ребенка. Интересно, какие же тайны она хранит? Узнаем все тайны волшебства и конечно вернем подушку ее морозному владельцу все вместе!</p>
+										</div>
+										<div class="product__list">
+											<ul>
+												<li>Театрализованная программа</li>
+												<li>Авторский реквизит</li>
+												<li>Музыкальное сопровождение</li>
+												<li>Погружение в новогоднюю атмосферу</li>
+												<li>Игры и танцы</li>
+												<li>Хоровод</li>
+												<li>Вручение подарков</li>
+											</ul>
+										</div>
+										<div class="product__table">
+											<table>
+												<tbody>
+													<tr>
+														<td>до 20 декабря</td>
+														<td>6 500 р.</td>
+													</tr>
+													<tr>
+														<td>21 - 23 декабря</td>
+														<td>7 000 р.</td>
+													</tr>
+													<tr>
+														<td>24-26 декабря</td>
+														<td>7 500 р.</td>
+													</tr>
+													<tr>
+														<td>27-29 декабря</td>
+														<td>8 500 р.</td>
+													</tr>
+													<tr>
+														<td>30 декабря</td>
+														<td>9 500 р.</td>
+													</tr>
+													<tr>
+														<td>31 декабря до 16:00</td>
+														<td>12 500 р.</td>
+													</tr>
+													<tr>
+														<td>16:00 - 21:00</td>
+														<td>14 500 р.</td>
+													</tr>
+													<tr>
+														<td>21:00 - 01:00</td>
+														<td>16 500 р.</td>
+													</tr>
+													<tr>
+														<td>01:00 - 05:00</td>
+														<td>14 500 р.</td>
+													</tr>
+													<tr>
+														<td>1 января</td>
+														<td>12 500 р.</td>
+													</tr>
+													<tr>
+														<td>2 - 7 января</td>
+														<td>7 500 р.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="product__images col"><img src="upload/house/3.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="questions row">
+			<div class="container">
+				<div class="questions__socials col">
+					<ul>
+						<li><a href="" target="_blank"><i class="icon icon-insta-big-orange"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-youtube-big-orange"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-vk-big-orange"></i></a></li>
+					</ul>
+				</div>
+				<div class="questions__form form col">
+					<div class="form__title title">Остались вопросы?</div>
+					<div class="form__elements">
+						<input type="text" class="form__input input" placeholder="Ваше имя">
+						<input type="text" class="form__input input" placeholder="E-mail">
+						<textarea class="form__textarea textarea" placeholder="Сообщение"></textarea>
+						<button class="form__button button button_white">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-contacts">
+			<div class="container row">
+				<div class="f-contacts__item col"><i class="icon icon-mail"></i><a href="">Art-kefir@mail.ru</a></div>
+				<div class="f-contacts__item col"><i class="icon icon-phone"></i><a href="">+7(499)450-81-01</a></div>
+			</div>
+		</div>
+		<div class="callback">
+			<div class="container">
+				<div class="callback__arrow"><i class="icon icon-arrow-up"></i></div>
+				<div class="callback__wrap">
+					<input type="text" class="callback__input input input_blue" placeholder="Ваше имя">
+					<input type="text" class="callback__input input input_blue input_phone" placeholder="Телефон">
+					<button class="callback__button button button_blue">Заказать звонок</button>
+				</div>
+				<div class="callback__link"><span>Заказать звонок</span></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

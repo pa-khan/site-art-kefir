@@ -29,18 +29,16 @@
 	</div>
 	<div class="popup popup_order" id="popup-order">
 		<div class="popup__close" data-fancybox-close><i class="icon icon-close"></i></div>
-		<div class="popup__title title">Оставить заявку</div>
-		<input type="text" class="popup__input input" placeholder="Имя">
-		<input type="text" class="popup__input input" placeholder="E-mail">
-		<button class="popup__button button button_white">Отправить</button>
+		<input type="text" class="popup__input input" placeholder="Ваше имя">
+		<input type="text" class="popup__input input input_phone" placeholder="Телефон">
+		<button class="popup__button button button_white">Заказать</button>
 	</div>
 	<div class="popup popup_review" id="popup-review">
 		<div class="popup__close" data-fancybox-close><i class="icon icon-close"></i></div>
-		<div class="popup__title title">Оставить отзыв</div>
-		<input type="text" class="popup__input input" placeholder="Имя">
-		<input type="text" class="popup__input input" placeholder="E-mail">
+		<input type="text" class="popup__input input" placeholder="Ваше имя и фамилия">
 		<textarea class="popup__textarea textarea" placeholder="Ваш отзыв"></textarea>
-		<button class="popup__button button button_white">Отправить</button>
+		<div class="upload"><input type="file" accept="image/*" id="upload"><label for="upload">Загрузить фотографию</label></div>
+		<button class="popup__button button button_white">Оставить отзыв</button>
 	</div>
 	<header class="header">
 		<div class="panel">
@@ -84,6 +82,14 @@
 						<li><a href="">воздушные шары</a></li>
 						<li><a href="">новый год 2018</a></li>
 					</ul>
+				</div>
+				<div class="panel__hum hum col">
+					<div class="hum__lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="hum__text">меню</div>
 				</div>
 				<div class="panel__contacts col">
 					<div class="panel__phone"><a href="">+7(499)450-81-01</a></div>
@@ -141,7 +147,11 @@
 		</div>
 	</header>
 	<div class="banner">
-		<div class="banner__img"><img src="upload/banner.png" alt=""></div>
+		<div class="banner__video">
+			<video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+				<source src="upload/video.mp4" type="video/mp4" id="source-video">
+    	</video>
+		</div>
 		<div class="banner__wrap">
 			<div class="container">
 				<div class="banner__title">Организация праздников, квестов, шоу для детей</div>
@@ -160,9 +170,24 @@
 						<p>Дед Мороз и Снегурочка на дом!</p>
 					</div>
 					<div class="ny2018__link"><a href="">Получите подробную информацию</a></div>
-					<div class="ny2018__button button button_blue">Заказать</div>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="ny2018__button button button_blue">Заказать</a>
 				</div>
 				<div class="ny2018__img col"><img src="upload/new-year.png" alt=""></div>
+			</div>
+		</div>
+		<div class="ny2018">
+			<div class="container row">
+				<div class="ny2018__content col">
+					<div class="ny2018__title">Дед Мороз и Снегурочка <br>на дом</div>
+					<div class="ny2018__text">
+						<p>• Классическое поздравление</p>
+						<p>• Интерактивная программа «Подушка Деда Мороза»</p>
+						<p>• Интерактивная программа «Морозные чудеса»</p>
+					</div>
+					<div class="ny2018__link"><a href="">Получите подробную информацию</a></div>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="ny2018__button button button_blue">Заказать</a>
+				</div>
+				<div class="ny2018__img col"><img src="upload/house/1.png" alt=""></div>
 			</div>
 		</div>
 		<div class="main-page">
@@ -289,9 +314,9 @@
 			</div>
 		</div>
 		<div class="f-contacts">
-			<div class="container row_line">
-				<div class="f-contacts__item col_line"><i class="icon icon-mail"></i><a href="">Art-kefir@mail.ru</a></div>
-				<div class="f-contacts__item col_line"><i class="icon icon-phone"></i><a href="">+7(499)450-81-01</a></div>
+			<div class="container row">
+				<div class="f-contacts__item col"><i class="icon icon-mail"></i><a href="">Art-kefir@mail.ru</a></div>
+				<div class="f-contacts__item col"><i class="icon icon-phone"></i><a href="">+7(499)450-81-01</a></div>
 			</div>
 		</div>
 		<div class="callback">

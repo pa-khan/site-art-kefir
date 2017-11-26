@@ -1,3 +1,726 @@
-// @media screen and (max-width: 1199px)
-// 	.container
-// 		width: 950px
+@media screen and (max-width: 1199px)
+	.container
+		width: 950px
+	.title
+		font-size: 28px
+	img
+		max-width: 100%
+	.panel
+		// box-shadow: none
+		.container
+			position: static
+		&__logo
+			width: 67px
+		&__nav
+			display: none
+			z-index: 10
+			position: absolute
+			top: 95px
+			width: 100%
+			left: 0
+			padding-top: 10px
+			padding-bottom: 15px
+			background: white
+			margin-left: 0
+			li
+				margin-left: 0
+				padding-left: 15px
+				padding-right: 15px
+				line-height: 20px
+				ul
+					display: none !important
+
+		&__hum
+			display: block
+			margin-top: 35px
+			margin-left: 400px
+		&__contacts
+			padding-top: 10px
+		&__nav
+			box-shadow: inset 0 -2px 3px 1px rgba(0, 0, 0, 0.15)
+	.nav-fixed
+		display: none
+
+	.ny2018
+		padding-top: 35px
+		padding-bottom: 30px
+		&__img
+			width: 380px
+			padding-top: 20px
+		&__title
+			font-size: 28px
+			margin-bottom: 20px
+		&__text
+			margin-bottom: 20px
+		&__link
+			margin-bottom: 50px
+
+		&:nth-of-type(1)
+			.ny2018
+				&__button
+					right: 100px
+
+		&:nth-of-type(2)
+			.ny2018
+				&__button
+					margin-left: auto
+					margin-right: 0
+					right: -100px
+
+	.about
+		&__list, &__name
+			margin-left: auto
+			margin-right: auto
+		&__name
+			margin-top: -25px
+
+	.insta
+		display: none
+
+	.main-page
+		background-position: 0 0
+		&__block
+			width: 100%
+
+	.scheme
+		&__item
+			&:first-of-type
+				// margin-left: 50px
+			&:last-of-type
+				margin-right: 0
+
+	.clients
+		padding-bottom: 25px
+		&__list
+			margin-left: auto
+			margin-right: auto
+
+	.reviews
+		&__list
+			width: 700px
+			margin-bottom: 40px
+		.slick-prev
+			left: -110px
+		.slick-next
+			right: -110px
+
+	.questions
+		margin-top: 50px
+		background-position: -600px 0
+		.container
+			background: none
+		&__socials
+			position: absolute
+			width: auto
+			padding-top: 0
+			bottom: -80px
+			li
+				margin-bottom: 0
+				margin-right: 28px
+				&:last-of-type
+					margin-right: 0
+
+
+	.form
+		padding-bottom: 45px
+		padding-right: 0
+		float: none
+		width: 100%
+
+	.f-contacts
+		padding-top: 46px
+		padding-bottom: 56px
+		&__item
+			&:nth-of-type(1)
+				margin-left: 320px
+				margin-right: 0
+			&:nth-of-type(2)
+				float: right
+
+	.animate
+		&__item
+			margin-bottom: 40px
+		&__content
+			width: 100%
+			padding-top: 10px
+		&__button
+			margin-top: 10px
+	.dops
+		margin-top: 50px
+		&__title
+			margin-bottom: 30px
+		&__item
+			&:nth-of-type(2)
+				margin-left: 50px
+				margin-right: 50px
+
+	.catalog
+		&__link
+			margin-top: 40px
+
+
+	.ny
+		&__nav
+			li
+				width: 50%
+			a
+				width: 100%
+		&__nav, &__banner
+			margin-left: -15px
+			margin-right: -15px
+		
+		&__wrap
+			top: 140px
+		&__banner
+			margin-bottom: 25px
+			&_mod
+				.ny
+					&__title
+						margin-top: 50px
+
+	
+
+	.product
+		padding-top: 50px
+		min-height: 1px
+		&__sliders
+			float: none
+			margin-top: 40px !important
+		&__imgs
+			.slick-slide
+				padding-left: 7px
+				padding-right: 7px
+		&__title, &__content, &__sliders
+			width: 560px !important
+			margin-left: auto
+			margin-right: auto
+		&__title
+			text-align: left
+		&__text
+			width: 100% !important
+		&__content
+			float: none
+			padding-bottom: 0
+		&__images
+			margin-top: 40px
+			position: relative
+			top: 0 !important
+			right: 0
+			font-size: 0
+			text-align: center
+			width: 100%
+			img
+				display: inline-block
+	
+		&__button
+			position: relative
+			bottom: 0
+			left: 0
+			margin-top: 30px
+
+	.fairy-tale
+		&__product
+			padding-top: 0
+		&__title
+			
+		&__dops
+			&-title
+				text-align: left
+				margin-bottom: 35px
+		&__dop
+			margin-bottom: 50px
+			&-title
+
+			&-content
+				float: left !important
+			&-imgs
+				top: 30px
+				height: 323px
+				float: right !important
+	.advantages
+		&__wrap
+			margin-left: 0
+			padding-left: 15px
+			padding-right: 0
+		&__item
+			width: 50% !important
+			margin-left: 0 !important
+			margin-right: 0 !important
+			padding-left: 0 !important
+			padding-right: 20px !important
+			&:nth-of-type(4)
+				padding-top: 35px
+			&:nth-of-type(5)
+				margin-left: 50% !important
+		&__img
+			width: 228px
+			height: 488px
+			left: 150px
+
+	#tabs-2
+		.product
+			&:nth-of-type(2)
+				.product__images
+					img
+						position: relative
+						left: -35px
+			&:nth-of-type(3)
+				.product__images
+					img
+						position: relative
+						left: -53px
+
+@media screen and (max-width: 970px)
+	.container
+		width: 100%
+
+	.panel
+		&__nav
+			padding-top: 20px
+			padding-bottom: 20px
+			li
+				display: block
+				width: 100% !important
+				text-align: left
+				font-size: 20px
+				margin-bottom: 15px
+				&:last-of-type
+					margin-bottom: 0
+
+	.hum
+		margin-left: 40%
+
+
+@media screen and (max-width: 970px)
+	.title, .ny2018__title
+		font-size: 24px !important
+		line-height: 28px !important
+	.hum
+		margin-left: 20%
+
+	.ny2018
+		padding-top: 15px
+		padding-bottom: 15px
+		margin-bottom: 40px
+		&__img
+			// display: none
+			float: none !important
+			margin-left: auto
+			margin-right: auto
+			max-width: 380px
+			width: 100%
+		&__content
+			float: none !important
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			padding-top: 0
+		&__text
+			max-width: 100%
+			p
+				font-size: 16px
+				line-height: 20px
+				// display: inline
+		&__link
+			margin-bottom: 20px
+			a
+				font-size: 18px
+		&__button
+			left: auto !important
+			right: auto !important
+			margin-left: auto !important
+			margin-right: auto !important
+		&:nth-of-type(2)
+			padding-bottom: 20px
+			margin-bottom: 0
+			.ny2018
+				&__img
+					img
+						position: relative
+						left: -25px
+
+	.main-page
+		background: none
+		margin-bottom: 30px
+
+	.about, .scheme, .clients, .reviews
+		&__title
+			text-align: center
+			margin-bottom: 25px
+
+	.about
+		padding-top: 20px
+		background: #5DDFC9
+		margin-left: -15px
+		margin-right: -15px
+		padding-left: 15px
+		padding-right: 15px
+		&__subtitle
+			font-size: 18px
+			margin-bottom: 10px
+		&__name
+			background-size: 100%
+			width: 100%
+			// margin-bottom: -10px
+
+	.scheme
+		padding-top: 25px
+		padding-bottom: 35px
+		&__list
+			margin-left: 0
+		&__item
+			margin-left: 10px !important
+			margin-right: 10px !important
+			margin-bottom: 20px
+			&:after
+				display: none
+		&__text
+			font-size: 18px
+			margin-top: 13px
+
+	.clients
+		&__list
+			width: 100%
+		&__item
+			margin-left: 20px
+			margin-right: 20px
+
+	.reviews
+		&__list
+			width: 100%
+			margin-bottom: 20px
+		.slick-arrow
+			z-index: 1
+			transform: scale(.5)
+			top: -65px
+		.slick-prev
+			left: -5px
+		.slick-next
+			right: -5px
+
+	.questions
+		margin-top: 40px
+		&__socials
+			width: 100%
+			left: 0
+			float: none
+			padding-left: 15px
+			padding-right: 15px
+			text-align: center
+			bottom: -70px
+	.form
+		padding-top: 25px
+		padding-bottom: 10px
+		&__title
+			margin-bottom: 25px
+		&__elements
+			width: 100%
+			max-width: 750px
+		&__textarea
+			margin-bottom: 10px
+	.input
+		display: block
+		width: 100%
+		max-width: 420px
+		margin-right: auto !important
+		margin-left: auto !important
+		font-size: 16px
+		padding: 10px 15px
+		margin-bottom: 10px
+	.textarea
+		padding: 15px
+		font-size: 16px
+		max-width: 420px
+		margin-right: auto !important
+		margin-left: auto !important
+	.upload
+		max-width: 420px
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+	.f-contacts
+		padding-top: 90px
+		padding-bottom: 30px
+		&__item
+			float: none !important
+			display: block
+			margin-left: auto !important
+			margin-right: auto !important
+			&:first-of-type
+				margin-bottom: 20px
+	.button	
+		font-size: 18px
+		padding-top: 14px
+		padding-bottom: 13px
+
+	.animate
+		&__item
+			margin-bottom: 20px
+		&__img
+			max-width: 100%
+			img
+
+				&:nth-of-type(2)
+					display: none
+		&__content
+			display: none
+		&__button
+			margin-top: 30px
+	.dops
+		&__list
+			margin-left: -15px
+			margin-right: -15px
+		&__item
+			margin-left: 15px !important
+			margin-right: 15px !important
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+		&__img
+			margin-bottom: 15px
+	.ny
+		&__nav
+			li
+				width: 100%
+				font-size: 18px
+			a
+				border-radius: 0
+		&__wrap
+			top: 20%
+			left: 0
+			width: 100%
+			text-align: center
+			padding-left: 15px
+			padding-right: 15px
+
+		&__title
+			margin-bottom: 15px
+		&__desc
+			margin-bottom: 20px
+		&__desc, &__button
+			margin-left: auto
+			margin-right: auto
+
+	.advantages
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: 20px
+		&__wrap
+			border-radius: 0
+			padding-top: 25px
+			padding-right: 15px
+		&__title
+			text-align: center
+			margin-bottom: 25px
+		&__subtitle
+			margin-bottom: 5px
+			font-size: 18px
+		&__item
+			width: 100% !important
+			padding-right: 0 !important
+			margin-bottom: 20px
+			&:nth-of-type(4)
+				padding-top: 0
+			&:nth-of-type(5)
+				margin-left: 0 !important
+				margin-bottom: 10px
+		&__img
+			display: none
+
+	.fairy-tale
+		&__dops
+			&-title
+				text-align: center
+@media screen and (max-width: 720px)
+	.about
+		&__item
+			width: 100%
+			margin-bottom: 25px
+		&__content
+			padding-right: 0
+		&__name
+			margin-top: 0
+	.popup
+		width: 95%
+		padding: 40px 20px
+		border-radius: 10px
+		&__close
+			top: 10px
+			right: 10px
+			transform: scale(.5)
+	.page
+		&__head
+			padding-top: 30px
+			padding-bottom: 30px
+	.breadcrumbs, .link
+		width: 100%
+		float: none
+	.breadcrumbs
+		li
+			font-size: 18px
+	.link
+		text-align: center
+		margin-top: 20px
+		font-size: 18px
+		line-height: 22px
+		a
+			// display: inline-block
+@media screen and (max-width: 680px)
+	.product
+		&__title, &__content, &__slider
+			width: 100% !important
+		&__data
+			text-align: center
+			margin-left: -15px
+			margin-right: -15px
+			&-item
+				// display: block
+				width: 100px !important
+				float: none
+				margin-bottom: 10px
+				text-align: center
+				vertical-align: top
+				b
+					display: block
+					line-height: 55px
+					height: 55px
+					vertical-align: top
+					margin-bottom: 10px
+				i
+					margin-right: 0 !important
+				span
+					display: block
+					margin-left: auto !important
+					margin-right: auto !important
+
+	.fairy-tale
+		&__dop
+			&-content, &-imgs
+				float: none !important
+			&-data
+				margin-bottom: 10px
+				&-item
+					margin-bottom: 20px
+					vertical-align: top
+					&:last-of-type
+						margin-bottom: 0
+			&-content
+				width: 100%
+			&-text
+				max-width: 100%
+			&-imgs
+				display: none
+
+
+@media screen and (max-width: 620px)
+	.ny
+		&__banner
+			padding-top: 25px	
+		&__img
+			display: none
+		&__wrap
+			position: relative
+			color: #272524
+
+		&__title
+			margin-top: 0 !important
+
+	.product
+		padding: 0
+		border-radius: 0
+		border: none
+		background: none
+		box-shadow: none
+		margin-bottom: 60px
+		&:before
+			display: none
+		&__title
+			text-align: center
+		&__images
+			img
+				left: 0 !important
+		&__button
+			margin-left: auto !important
+			margin-right: auto !important
+
+		&__sliders
+			width: 100% !important
+			iframe
+				width: 100%
+
+
+@media screen and (max-width: 470px)
+	.banner
+		height: 400px
+		&__wrap
+			padding-top: 40px
+	.hum
+		margin-left: 10%
+		width: auto
+		&__text
+			display: none
+
+	.about
+		&__name
+			display: none
+
+	.reviews
+		&__face, &__content
+			float: none
+		&__face
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 10px
+		&__content
+			width: 100%
+
+	.catalog
+		&__item
+			width: 280px
+			min-height: 1px
+			padding-top: 20px
+			padding-bottom: 20px
+			border-radius: 15px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 15px
+		&__title
+			height: auto
+		&__img
+			height: auto
+			line-height: normal
+			margin-top: 15px
+			padding-bottom: 15px
+		&__data
+			position: relative
+			bottom: 0
+
+		&__link
+			margin-top: 15px
+			&-title
+				margin-bottom: 20px
+	.popup__title
+		margin-bottom: 20px
+@media screen and (max-width: 420px)
+	.product
+		&__table
+			table
+				td, th
+					font-size: 12px
+					padding: 3px 3px 2px
+		&__sliders
+			iframe
+				height: 200px
+
+	.upload
+		label
+			display: inline
+			margin-left: 0
+			line-height: 20px
+@media screen and (max-width: 350px)
+	.hum
+		margin-left: 20px
+
+	.ny__nav
+		li
+			font-size: 16px

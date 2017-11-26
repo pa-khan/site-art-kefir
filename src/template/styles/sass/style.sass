@@ -185,7 +185,7 @@ img
 	border-radius: 50px
 	width: 250px
 	font-weight: 500
-	padding: 20px 5px 15px
+	padding: 18px 5px 17px
 	box-shadow: inset 0 -2px 3px 1px rgba(0, 0, 0, 0.15)
 	&_blue
 		background-color: #7adcc9
@@ -217,8 +217,8 @@ img
 .popup
 	display: none
 	position: relative
+	width: 615px
 	&_thanks
-		width: 615px
 		background: #5ddfc9
 		text-align: center
 		padding-top: 80px
@@ -233,22 +233,19 @@ img
 				margin-left: auto
 				margin-right: auto
 	&_review
-		width: 615px
 		background: #5ddfc9
 		text-align: center
-		padding-top: 30px
-		padding-bottom: 35px
+		padding: 100px 60px 80px
 		border-radius: 55px
 		font-family: $font-family-1
+		width: 800px
 		.popup
 			&__title
 				margin-bottom: 20px
 	&_order
-		width: 450px
 		background: #5ddfc9
 		text-align: center
-		padding-top: 30px
-		padding-bottom: 35px
+		padding: 100px
 		border-radius: 55px
 		font-family: $font-family-1
 		.popup
@@ -258,7 +255,9 @@ img
 		color: white
 		margin-bottom: 45px
 	&__input, &__textarea
-		margin-bottom: 15px
+		margin-bottom: 35px
+	&__textarea
+		height: 300px
 	&__close
 		top: 27px
 		right: 31px
@@ -272,13 +271,28 @@ img
 
 	.fancybox-close-small
 		display: none
+.upload
+	text-align: left
+	margin-bottom: 30px
+	input
+		display: none
+	label
+		font-size: 18px
+		font-weight: 700
+		border-bottom: 1px solid $color-1
+		display: inline-block
+		cursor: pointer
+		margin-left: 15px
+		transition: .3s
+		&:hover
+			border-color: transparent
 .panel
 	padding-top: 4px
 	padding-bottom: 8px
 	box-shadow: inset 0 -2px 3px 1px rgba(0, 0, 0, 0.15)
 	&__logo
 		position: relative
-		z-index: 3
+		z-index: 1
 		width: 88px
 	&__nav
 		margin-left: 20px
@@ -409,6 +423,23 @@ img
 
 .banner
 	position: relative
+	height: 571px
+	overflow: hidden
+	&__video
+		position: absolute
+		width: 100%
+		height: 100%
+		object-fit: cover
+		top: -50%
+		text-align: center
+		&:before
+			width: 100%
+			height: 100%
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			background: rgba(0,0,0,.5)
 	&__img
 		position: relative
 		&:after
@@ -448,6 +479,45 @@ img
 		font-weight: 700
 		margin-bottom: 45px
 
+.hum
+	width: 100px
+	cursor: pointer
+	display: none
+	&__lines
+		span
+			position: relative
+			width: 30px
+			height: 5px
+			border-radius: 25px
+			display: block
+			background: #000
+			margin-bottom: 3px
+			transition: .3s
+			&:last-of-type
+				margin-bottom: 0
+	&__text
+		font-size: 15px
+		font-weight: 500
+		text-transform: uppercase
+		margin-left: 13px
+	&__lines, &__text
+		display: inline-block
+		vertical-align: middle
+	&_toggle
+		.hum
+			&__lines
+				span
+					&:nth-of-type(1)
+						top: 8px
+						transform: rotate(45deg)
+					&:nth-of-type(2)
+						opacity: 0
+					&:nth-of-type(3)
+						top: -8px
+						transform: rotate(-45deg)
+
+
+		
 
 .ny2018
 	padding-top: 60px
@@ -486,6 +556,13 @@ img
 				border-color: transparent
 	&__button
 		margin-left: 0
+	&:nth-of-type(2)
+		padding-top: 0
+		.ny2018
+			&__content
+				float: left
+			&__img
+				float: right
 
 .main-page
 	background: url('../../img/bg/rectangle-about.png') no-repeat center top
@@ -635,7 +712,7 @@ img
 		margin-right: auto
 		margin-bottom: 60px
 		.slick-arrow
-			top: 20px
+			top: 60px
 		.slick-prev
 			left: -160px
 		.slick-next
@@ -646,6 +723,10 @@ img
 		border-radius: 50%
 		box-shadow: inset 0 -2px 3px 1px rgba(122, 220, 201, 0.15)
 		background-color: #aeaeae
+		img
+			width: 110px
+			height: 110px
+			border-radius: 50%
 
 	&__content
 		float: right
@@ -845,10 +926,9 @@ img
 		vertical-align: middle
 
 	.count
-		display: inline-block
 		width: 24px
 		height: 24px
-		line-height: 28px
+		padding-top: 5px
 		border-radius: 50%
 		text-align: center
 		background: #5ddfc9
@@ -858,6 +938,9 @@ img
 		font-weight: 500
 		margin-left: 13px
 
+	.count, .text
+		display: inline-block
+		vertical-align: middle
 	&__button
 		margin-top: 85px
 
@@ -939,6 +1022,7 @@ img
 	margin-bottom: 30px
 	padding: 49px 32px 45px
 	min-height: 655px
+
 	&__title
 		color: #fd9b00
 		margin-bottom: 25px
@@ -958,6 +1042,24 @@ img
 			font-size: 22px
 			position: relative
 			top: 3px
+
+		&_xs
+			font-size: 0
+			.product__data-item
+				width: 33.333%
+				margin-right: 0
+			.icon
+				margin-right: 10px
+			span
+				font-size: 14px
+				line-height: 18px
+				display: inline-block
+				vertical-align: middle
+				width: 95px
+			u
+				text-decoration: none
+				display: block
+				font-weight: 500
 
 	&__content
 		width: 470px
@@ -994,3 +1096,263 @@ img
 		position: absolute
 		bottom: 52px
 		left: 34px
+
+	&__table
+		margin-top: 25px
+		table
+			border-collapse: collapse
+			text-align: center
+			font-size: 14px
+			width: 100%
+			td, th
+				border: 1px solid $color-1
+				padding: 6px 2px 4px
+			th
+				color: #ff9700
+	&__sliders
+		float: right
+		width: 555px
+		text-align: center
+		font-size: 0
+		img
+			display: inline-block
+			cursor: pointer
+
+	&__img
+		margin-bottom: 14px
+	&__imgs
+		margin-left: -5px
+		margin-right: -5px
+		&__imgs
+			.slick-slide
+				padding-left: 5px
+				padding-right: 5px
+				img
+					width: 100%
+	&__images
+		position: absolute
+		top: 103px
+		right: 34px
+
+	&_zero
+		min-height: 1px
+		.product
+			&__content
+				padding-bottom: 0
+	&_hit
+		padding-top: 90px
+		&:before
+			content: ''
+			@include sprite($hit)
+			display: block
+			position: absolute
+			top: -9px
+			left: -9px
+		.product
+			&__images
+				top: 145px
+
+.ny
+	&__nav
+		li
+			font-size: 22px
+			font-weight: 500
+			text-align: center
+			&.ui-tabs-active
+				a					
+					background-color: #7adcc9
+		a
+			display: block
+			width: 435px
+			padding: 20px 0 14px
+			background-color: #bfede4
+			border-radius: 25px 25px 0 0
+			&:hover
+				background-color: #fd9b00
+	&__banner
+		position: relative
+		margin-bottom: 70px
+		&_mod
+			margin-bottom: 25px
+			.ny
+				&__title
+					margin-top: 200px
+
+	&__wrap
+		position: absolute
+		top: 165px
+		left: 65px
+		color: white
+	&__img
+
+	&__title
+		font-weight: 900
+		font-size: 36px
+		margin-bottom: 50px
+		&__title
+			margin-top: 200px
+
+	&__desc
+		font-size: 22px
+		line-height: 26px
+		font-weight: 700
+		max-width: 495px
+		margin-bottom: 50px
+
+	&__button
+		margin-left: 0
+
+
+.fairy-tale
+	&__about
+		
+	&__product
+		background: none
+		border-radius: 0
+		box-shadow: none
+		border: none
+		padding: 0
+		min-height: 1px
+		margin-bottom: 60px
+		.product
+			&__title
+				width: 460px
+				line-height: 40px
+				margin-bottom: 20px
+			&__text
+				font-size: 15px
+				line-height: 20px
+				width: 465px
+				text-align: left
+				border-bottom: none
+				padding-bottom: 0
+			&__content
+				padding-bottom: 0
+			&__sliders
+				margin-top: -80px
+			&__button
+				position: relative
+				bottom: 0
+				left: 0
+				margin-left: 0
+	&__dops
+		&-title
+			text-align: center
+			color: #fd9b00
+			margin-bottom: 85px
+	&__dop
+		margin-bottom: 125px
+		&:nth-of-type(odd)
+			.fairy-tale__dop
+				&-imgs
+					float: right
+					img
+						&:nth-of-type(1)
+							right: 0
+							top: -28px
+						&:nth-of-type(2)
+							top: 110px
+							right: 270px
+						&:nth-of-type(3)
+							top: 10px
+							right: 422px
+		&:nth-of-type(even)
+			.fairy-tale__dop
+				&-content
+					float: right
+				&-imgs
+					img
+						&:nth-of-type(1)
+							left: 0
+							top: -28px
+						&:nth-of-type(2)
+							top: 110px
+							left: 270px
+						&:nth-of-type(3)
+							top: 10px
+							left: 422px
+		&:last-of-type
+			margin-bottom: 0
+		&-title
+			font-size: 21px
+			font-weight: 500
+			color: #fd9b00
+			margin-bottom: 25px
+		&-data
+			font-size: 0
+			margin-bottom: 31px
+			&-item
+				display: inline-block
+				vertical-align: middle
+				font-size: 22px
+				margin-right: 45px
+				&:last-of-type
+					margin-right: 0
+				i
+					margin-right: 19px
+				i, span
+					display: inline-block
+					vertical-align: middle
+		&-content
+			width: 500px
+		&-text
+			font-size: 15px
+			line-height: 18px
+			max-width: 455px
+		&-imgs
+			position: relative
+			width: 625px
+			img
+				position: absolute
+.advantages
+	margin-bottom: 105px
+	&__wrap
+		margin-left: 70px
+		position: relative
+		padding: 65px 25px 100px 95px
+		border-radius: 50px
+		background: url('../../img/bg/pattern.png') repeat-x center bottom, #7adcc9
+	&__title, &__subtitle
+		color: white
+	&__title
+		margin-bottom: 70px
+	&__subtitle
+		font-size: 22px
+		font-weight: 500
+		margin-bottom: 30px
+	&__item
+		width: 33.3333%
+		text-align: left
+		margin-bottom: 35px
+		padding-right: 35px
+		&:nth-of-type(4)
+			width: 45%
+			margin-left: 130px
+			margin-right: 10px
+		&:nth-of-type(5)
+			padding-right: 0
+			width: 40%
+	&__text
+		line-height: 22px
+	&__img
+		position: absolute
+		bottom: 0
+		left: 0
+		img
+			position: absolute
+			&:nth-of-type(1)
+				left: -71px
+				bottom: 265px
+			&:nth-of-type(2)
+				left: -10px
+				bottom: 115px
+			&:nth-of-type(3)
+				left: -28px
+				bottom: -36px
+
+
+.slick-arrow
+	width: auto
+	height: auto
+	&:before
+		display: none

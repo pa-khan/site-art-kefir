@@ -1132,7 +1132,7 @@ img {
 .animate .count {
   width: 24px;
   height: 24px;
-  padding-top: 5px;
+  padding-top: 3px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   text-align: center;
